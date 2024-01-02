@@ -5,20 +5,10 @@ import(
   "interpreter/token"
 )
 
-type Lexer struct{
-  input string
-  position int
-  readPosition int 
-  ch byte
-}
 
-fun New(input string) *Lexer{
-  l := &lexer{input: input}
-  return l
-}
 
 func TestNextToken(t *testing.T){
-  input := `=+(){},;` 
+  input := `=+(){},;`  
 
   tests := []struct{
     expectedType token.TokenType
@@ -31,8 +21,8 @@ func TestNextToken(t *testing.T){
     {token.LBRACE, "{"},
     {token.RBRACE, "}"},
     {token.COMMA, ","},
-    {token.EOF, ""},
     {token.SEMICOLON, ";"},
+    {token.EOF, ""},
   }
 
   l := New(input)
