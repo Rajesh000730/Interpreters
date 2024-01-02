@@ -20,8 +20,8 @@ const(
   COMMA = ","
   SEMICOLON = ";"
 
-  LPAREN = "("
-  RPAREN = ")"
+  LPARAN = "("
+  RPARAN = ")"
   LBRACE = "{"
   RBRACE = "}"
 
