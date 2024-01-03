@@ -1,3 +1,5 @@
+// start from adding skip whitespace
+
 package lexer
 
 import "interpreter/token"
